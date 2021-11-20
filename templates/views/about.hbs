@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>about</title>
+       <link rel="icon" href="/img/weather.png">
+      <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+    <div class="main-content">
+      {{>header}}
+      <p>This weather service takes input from the user and first finds its coordinates using Mapbox API and then uses that coordinates to find the weather of that location using Visual Crossing API. It created a Node.js Server using Express.js which allows users to interact with the application by visiting a URL in a browser, Express.js is also used to serve up with webpages, styles, and scripts. Handlebars templating engine with Express are used to render dynamic HTML pages. Finally, a connection is being set up between the client and the server using an HTTP request.</p>
+        <br>
+        <br>
+        <br>
+        <p>{{title}} : Basically I am the creator of the site. You can connect with me on <a href="https://www.linkedin.com/in/yash-babu-8284251a9">linkedIn</a></p>
+    </div>
+        {{>footer}}
+    </body>
+</html>
